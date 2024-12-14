@@ -20,7 +20,7 @@ function getSpecial() {
   return symbols[tmp];
 }
 
-(function generatePass() {
+function generatePass() {
   let length = getNum(8, 16);
   let password = "";
 
@@ -42,5 +42,9 @@ function getSpecial() {
         break;
     }
   }
-  console.log(password);
-})();
+  return password;
+}
+
+document.querySelector(".gen-btn").addEventListener("click", () => {
+  document.querySelector(".pass-holder").textContent = generatePass();
+});
