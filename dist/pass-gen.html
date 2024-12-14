@@ -4,10 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/5593a2500e.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./scripts/pass-generator.js" defer></script>
     <title>Password Generator</title>
   </head>
-  <body>
-    Password Generator Under Construction
+  <body class="flex items-center h-screen justify-center">
+    <div class="bg-red-100 m-5 p-3 rounded-xl border-red-200 border-2">
+      <div class="text-lg m-1 font-bold md:text-2xl md:font-normal">
+        Generate a Random Strong Password
+      </div>
+      <div class="text-slate-600 w-3/4 m-2">
+        Generate Strong, Secure Passwords Effortlessly — Protect Your Digital
+        World with Every Click!
+      </div>
+      <div class="flex justify-between items-center">
+        <div class="bg-white p-3 m-3 md:w-3/4 flex-3 text-slate-600 rounded-lg">
+          pass will be generated here
+        </div>
+        <div class="flex-1 text-xl">
+          <i class="fa-regular fa-copy cursor-copy"></i>
+        </div>
+      </div>
+      <button class="bg-slate-900 p-2 px-4 text-slate-100 m-3 rounded-lg">
+        Generate Password
+      </button>
+    </div>
   </body>
 </html>
