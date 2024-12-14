@@ -627,6 +627,10 @@ video {
   width: auto;
 }
 
+.w-44 {
+  width: 11rem;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -853,5 +857,9 @@ video {
 
   .md\:font-normal {
     font-weight: 400;
+  }
+
+  .md\:font-semibold {
+    font-weight: 600;
   }
 }

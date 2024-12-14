@@ -48,3 +48,12 @@ function generatePass() {
 document.querySelector(".gen-btn").addEventListener("click", () => {
   document.querySelector(".pass-holder").textContent = generatePass();
 });
+
+document.querySelector(".copyBtn").addEventListener("click", () => {
+  let password = document.querySelector(".pass-holder").textContent.trim();
+  if (password != "Password") {
+    navigator.clipboard
+      .writeText(password)
+      .then(console.log("Copied to chlipboard"));
+  }
+});
