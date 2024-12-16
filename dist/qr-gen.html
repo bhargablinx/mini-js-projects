@@ -39,9 +39,10 @@
             <div class="flex justify-around w-full mb-3">
               <label>Enter URL: </label>
               <input
+                required
                 autocomplete="off"
                 type="text"
-                placeholder="www.example.com"
+                placeholder="example.com"
                 class="p-1 px-4 rounded-lg"
               />
             </div>
@@ -55,10 +56,11 @@
             </div>
           </div>
           <!-- For Text -->
-          <div class="txt-data-fields hidden flex flex-col items-center m-5">
+          <div class="txt-data-fields hidden m-5">
             <div class="flex justify-around w-full mb-3">
               <label>Enter Text: </label>
               <input
+                required
                 autocomplete="off"
                 type="text"
                 placeholder="Text Here!!"
@@ -75,14 +77,14 @@
             </div>
           </div>
           <button
-            class="bg-sky-500 p-2 px-5 mx-auto rounded-lg font-medium border-2 border-slate-500"
+            class="generate-btn bg-sky-500 p-2 px-5 mx-auto rounded-lg font-medium border-2 border-slate-500"
           >
             Generate
           </button>
         </div>
       </div>
       <div class="flex-[1]">
-        <div>
+        <div class="qr-code-area">
           <div class="text-2xl font-semibold mb-3">QR Code Area</div>
           <div class="text-slate-600 ml-3">
             The generated QR will be shown here!
