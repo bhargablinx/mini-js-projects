@@ -24,16 +24,18 @@
           <!-- data selection -->
           <div class="flex justify-around px-4">
             <button
-              class="url-btn border-b-2 border-slate-400 w-3/4 text-slate-500"
+              class="data-selection-btn border-b-2 border-slate-400 w-3/4 text-slate-500"
             >
               URLs
             </button>
-            <button class="text-btn border-b-2 border-slate-400 w-3/4">
+            <button
+              class="data-selection-btn border-b-2 border-slate-400 w-3/4"
+            >
               Text
             </button>
           </div>
           <!-- For URLs -->
-          <div class="flex flex-col items-center m-5">
+          <div class="url-data-fields flex flex-col items-center m-5">
             <div class="flex justify-around w-full mb-3">
               <label>Enter URL: </label>
               <input
@@ -53,7 +55,7 @@
             </div>
           </div>
           <!-- For Text -->
-          <div class="hidden flex flex-col items-center m-5">
+          <div class="txt-data-fields hidden flex flex-col items-center m-5">
             <div class="flex justify-around w-full mb-3">
               <label>Enter Text: </label>
               <input
@@ -64,10 +66,10 @@
               />
             </div>
             <div class="flex justify-around w-full mb-3">
-              <label>Enter Size of QR (in px): </label>
+              <label>Enter Size: </label>
               <input
                 type="text"
-                placeholder="200 (default)"
+                placeholder="200px (default)"
                 class="p-1 px-4 rounded-lg"
               />
             </div>
