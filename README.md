@@ -8,4 +8,4 @@
 
 ## 02. QR Code Generator
 
-1[](./images/qr-generator.png)
+![](./images/qr-generator.png)
