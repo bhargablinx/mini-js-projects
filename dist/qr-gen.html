@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./scripts/qr-generator.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body class="text-slate-800">
+    <div class="flex justify-between p-10">
+      <div class="flex-[3]">
+        <div>
+          <div class="text-4xl font-semibold mb-3">QR Code Generator</div>
+          <div class="text-slate-600 ml-3">
+            Transform Data into Instant Access — Generate, Share, and Connect
+            with QR Codes Effortlessly!
+          </div>
+        </div>
+        <!-- card -->
+        <div
+          class="bg-slate-300 p-4 mt-20 rounded-lg w-1/2 mx-auto flex flex-col"
+        >
+          <!-- data selection -->
+          <div class="flex justify-around px-4">
+            <button
+              class="url-btn border-b-2 border-slate-400 w-3/4 text-slate-500"
+            >
+              URLs
+            </button>
+            <button class="text-btn border-b-2 border-slate-400 w-3/4">
+              Text
+            </button>
+          </div>
+          <!-- For URLs -->
+          <div class="flex flex-col items-center m-5">
+            <div class="flex justify-around w-full mb-3">
+              <label>Enter URL: </label>
+              <input
+                autocomplete="off"
+                type="text"
+                placeholder="www.example.com"
+                class="p-1 px-4 rounded-lg"
+              />
+            </div>
+            <div class="flex justify-around w-full mb-3">
+              <label>Enter Size: </label>
+              <input
+                type="text"
+                placeholder="200px (default)"
+                class="p-1 px-4 rounded-lg"
+              />
+            </div>
+          </div>
+          <!-- For Text -->
+          <div class="hidden flex flex-col items-center m-5">
+            <div class="flex justify-around w-full mb-3">
+              <label>Enter Text: </label>
+              <input
+                autocomplete="off"
+                type="text"
+                placeholder="Text Here!!"
+                class="p-1 px-4 rounded-lg"
+              />
+            </div>
+            <div class="flex justify-around w-full mb-3">
+              <label>Enter Size of QR (in px): </label>
+              <input
+                type="text"
+                placeholder="200 (default)"
+                class="p-1 px-4 rounded-lg"
+              />
+            </div>
+          </div>
+          <button
+            class="bg-sky-500 p-2 px-5 mx-auto rounded-lg font-medium border-2 border-slate-500"
+          >
+            Generate
+          </button>
+        </div>
+      </div>
+      <div class="flex-[1]">
+        <div>
+          <div class="text-2xl font-semibold mb-3">QR Code Area</div>
+          <div class="text-slate-600 ml-3">
+            The generated QR will be shown here!
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
