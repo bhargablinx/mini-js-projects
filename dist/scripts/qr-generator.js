@@ -23,8 +23,6 @@ function removeOldQR() {
   document.querySelector(".your-qr").remove();
 }
 
-function convertingValidUrl() {}
-
 document.querySelectorAll(".data-selection-btn").forEach((item) => {
   item.addEventListener("click", (e) => {
     const btnClicked = e.target.innerText;
