@@ -46,6 +46,9 @@
         .addEventListener("click", () => {
           document.querySelector(".toast-card-succ").classList.add("hidden");
         });
+      setInterval(() => {
+        document.querySelector(".toast-card-succ").classList.add("hidden");
+      }, 2000);
     });
 
     document.querySelector(".fail-btn").addEventListener("click", () => {
@@ -56,6 +59,9 @@
         .addEventListener("click", () => {
           document.querySelector(".toast-card-fail").classList.add("hidden");
         });
+      setInterval(() => {
+        document.querySelector(".toast-card-fail").classList.add("hidden");
+      }, 2000);
     });
   </script>
 </html>
