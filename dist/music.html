@@ -13,9 +13,9 @@
   </head>
   <body>
     <div class="flex justify-center items-center h-screen mx-auto">
-      <!-- player-containe -->
+      <!-- player-container -->
       <div
-        class="bg-slate-300 p-5 rounded-lg border-2 border-slate-400 flex flex-col items-center"
+        class="bg-slate-300 p-5 px-10 rounded-lg border-2 border-slate-400 flex flex-col items-center"
       >
         <div class="text-base font-semibold mb-2">The Night We Meet</div>
         <div class="text-sm text-slate-600 italic">Song by Lord Huron</div>
@@ -26,21 +26,24 @@
           />
         </div>
         <div>
-          <audio controls>
+          <audio>
             <source src="/src/The Night We Met.mp3" type="audio/mpeg" />
           </audio>
         </div>
         <!-- Real Audio Controls -->
         <div class="w-full px-5">
-          <input type="range" class="mt-8 w-full" />
+          <input type="range" class="progress-bar mt-2 w-full" />
         </div>
-        <div class="mt-5">
+
+        <div class="mt-5 flex items-center gap-8">
+          <i class="fa-solid fa-backward cursor-pointer"></i>
           <i
             class="play-btn fa-solid fa-play text-sm bg-slate-700 text-white p-4 px-5 rounded-3xl cursor-pointer"
           ></i>
           <i
             class="pause-btn hidden fa-solid fa-pause text-sm bg-slate-700 text-white p-4 px-5 rounded-3xl cursor-pointer"
           ></i>
+          <i class="fa-solid fa-forward cursor-pointer"></i>
         </div>
       </div>
     </div>
