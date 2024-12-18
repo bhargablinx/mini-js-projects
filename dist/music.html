@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/5593a2500e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./scripts/music-player.js" defer></script>
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div class="flex justify-center items-center h-screen mx-auto">
+      <!-- player-containe -->
+      <div
+        class="bg-slate-300 p-5 rounded-lg border-2 border-slate-400 flex flex-col items-center"
+      >
+        <div class="text-base font-semibold mb-2">The Night We Meet</div>
+        <div class="text-sm text-slate-600 italic">Song by Lord Huron</div>
+        <div>
+          <img
+            src="https://i1.sndcdn.com/artworks-SchdejUhbg4DWuaQ-cxnpaA-t500x500.jpg"
+            class="w-64 rounded-lg my-5"
+          />
+        </div>
+        <div>
+          <audio controls>
+            <source src="/src/The Night We Met.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+        <!-- Real Audio Controls -->
+        <div class="w-full px-5">
+          <input type="range" class="mt-8 w-full" />
+        </div>
+        <div class="mt-5">
+          <i
+            class="play-btn fa-solid fa-play text-sm bg-slate-700 text-white p-4 px-5 rounded-3xl cursor-pointer"
+          ></i>
+          <i
+            class="pause-btn hidden fa-solid fa-pause text-sm bg-slate-700 text-white p-4 px-5 rounded-3xl cursor-pointer"
+          ></i>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
