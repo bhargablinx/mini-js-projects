@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/5593a2500e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/stopwatch.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Stopwatch</title>
+  </head>
+  <body>
+    <div class="flex justify-center items-center h-screen">
+      <!-- timer container -->
+      <div
+        class="bg-slate-800 text-slate-100 p-10 flex flex-col items-center rounded-xl px-28 py-16"
+      >
+        <div class="text-4xl m-3 mb-12 flex">
+          <p class="hr-container">00</p>
+          :
+          <p class="min-container">00</p>
+          :
+          <p class="sec-container">00</p>
+        </div>
+        <div class="flex gap-8 text-2xl">
+          <i class="fa-solid fa-stop m-3 cursor-pointer"></i>
+          <i class="fa-solid fa-play m-3 cursor-pointer"></i>
+          <i class="fa-solid fa-pause hidden m-3 cursor-pointer"></i>
+          <i class="fa-solid fa-arrows-spin m-3 cursor-pointer"></i>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
